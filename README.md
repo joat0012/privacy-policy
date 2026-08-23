@@ -4,7 +4,7 @@ Privacy policies for apps developed by [joat0012](https://github.com/joat0012), 
 
 Each app has its own subfolder:
 
-- [`rove/`](rove/) — [Rove](https://github.com/joat0012/Rove)
+- [`rove/`](rove/) — Rove
 
 ## Publishing
 
