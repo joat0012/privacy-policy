@@ -139,7 +139,7 @@
 <main>
   <header class="page-head">
     <h1>Qino プライバシーポリシー / Privacy Policy</h1>
-    <p class="updated">最終更新日 / Last updated: 2026-09-08</p>
+    <p class="updated">最終更新日 / Last updated: 2026-11-16</p>
   </header>
 
   <div class="lang-switch">
@@ -158,13 +158,16 @@
       本アプリは、QRコード・バーコードの読み取り機能を提供するために端末のカメラを使用します。カメラの映像は、コードを検出するためにアプリ内でリアルタイムに解析されるのみで、映像や画像として保存されることはなく、開発者や外部への送信も行われません。
     </p>
     <p>
-      また、端末内の写真ライブラリからQRコードを読み取る機能では、利用者が選択した画像のみをアプリ内で解析します。選択されなかった写真にアクセスすることはなく、解析対象の画像が外部へ送信されることもありません。
+      また、保存済みの画像からQRコードを読み取る機能では、OS標準の画像選択画面を使用し、利用者が選択した画像のみをアプリ内で解析します。本アプリが写真ライブラリ全体にアクセスすることはなく、選択されなかった写真を読み取ることもありません。解析対象の画像が外部へ送信されることもありません。
     </p>
     <p>
       本アプリは、読み取ったQRコード・バーコードの内容(URL、テキスト、Wi-Fi情報、連絡先、メールアドレス、電話番号、SMS等)や、本アプリで作成したQRコードの元データを、<strong>履歴として端末内のローカルデータベースにのみ保存</strong>します。これらのデータが開発者のサーバー等の外部システムへ送信されることはありません。
     </p>
     <p>
-      連絡先QRコードから連絡先を追加する機能、および連絡先情報からQRコードを作成する機能を利用する場合、本アプリは端末の連絡先へアクセスします。連絡先データはこの操作のために端末内でのみ使用され、開発者や外部へ送信されることはありません。
+      連絡先QRコードから連絡先を追加する機能では、読み取った内容を入力済みにしたOS標準の連絡先作成画面を開きます。保存するかどうかは利用者がその画面で決めるもので、本アプリが端末の連絡先を読み取ったり、直接書き込んだりすることはありません。また、連絡先のQRコードを作成する機能は、利用者がアプリ内のフォームに入力した内容のみを使用し、端末の連絡先は参照しません。
+    </p>
+    <p>
+      Wi-FiのQRコードを読み取った場合、本アプリは接続の手助けとして、パスワードを端末のクリップボードにコピーしてからOSのWi-Fi設定画面を開きます(本アプリが自らWi-Fiネットワークに接続することはありません)。このほか、テキストやバーコードの内容をクリップボードにコピーする操作があります。クリップボードにコピーした内容は端末内に残り、OSの仕様により他のアプリから参照できる場合があるため、必要に応じて消去してください。
     </p>
     <p>
       本アプリは、氏名・メールアドレス・位置情報など、利用者を直接特定できる個人情報を開発者が取得することはありません。ただし、次項のとおり、広告配信に伴い端末の広告識別子等の情報がGoogleに収集される場合があります。
@@ -189,18 +192,25 @@
     <p>
       本アプリは、前項のAdMobによる広告配信に伴う通信を除き、インターネット通信を行いません。開発者自身がアクセス解析(アナリティクス)SDKやクラッシュレポートSDK等を組み込むことはなく、開発者が本アプリの利用者情報を第三者に提供することもありません。
     </p>
+    <p>
+      なお、利用者が共有ボタンやURLを開く操作などを行った場合、該当する内容は利用者が選んだ他のアプリ(ブラウザ、共有先のアプリ等)に渡されます。渡された後の情報の取り扱いは、それぞれのアプリの方針に従います。
+    </p>
 
     <h2>4. 利用する権限</h2>
     <p>
-      本アプリは、以下の権限を各機能の利用時にのみ要求します。
+      本アプリが利用者に許可を求める権限は、次の1つのみです。
     </p>
     <ul>
       <li><strong>カメラ</strong>:QRコード・バーコードの読み取りのため</li>
-      <li><strong>写真ライブラリ</strong>:保存済みの画像からQRコードを読み取るため</li>
-      <li><strong>連絡先</strong>:連絡先QRコードから連絡先を追加する、または連絡先情報からQRコードを作成するため</li>
     </ul>
     <p>
-      これらの権限は、対応する機能を初めて利用する際にのみ要求され、それ以外の目的で使用されることはありません。
+      カメラの権限は、読み取り機能を初めて利用する際に要求され、それ以外の目的で使用されることはありません。
+    </p>
+    <p>
+      画像からの読み取りと連絡先の追加は、OS標準の画面を通じて行うため、本アプリが写真ライブラリや連絡先の権限を要求することはありません(OSの種類やバージョンによっては、OS側の確認画面が表示される場合があります)。
+    </p>
+    <p>
+      このほか、広告の配信のため、インターネット通信や広告識別子(Advertising ID)の利用に関する権限を宣言していますが、これらは利用者に個別の許可を求める種類の権限ではありません。
     </p>
 
     <h2>5. データの削除</h2>
@@ -238,13 +248,16 @@
       The App uses the device's camera to provide QR code and barcode scanning functionality. Camera footage is analyzed in real time within the App solely to detect codes; it is never saved as video or images and never sent to the Developer or anywhere else.
     </p>
     <p>
-      The photo-import feature analyzes only the image you explicitly select from your photo library. The App does not access any other photos, and the selected image is never sent anywhere outside the App.
+      The image-import feature uses the operating system's standard image picker and analyzes only the image you explicitly select. The App does not access your entire photo library or read any photos you did not select, and the selected image is never sent anywhere outside the App.
     </p>
     <p>
       The content of scanned QR codes/barcodes (URLs, text, Wi-Fi credentials, contact info, email addresses, phone numbers, SMS, etc.) and the source data of QR codes created in the App are <strong>saved as history only in a local database on your device</strong>. This data is never transmitted to any server operated by the Developer.
     </p>
     <p>
-      When you use the feature to add a contact from a scanned contact QR code, or to create a QR code from contact information, the App accesses your device's contacts. Contact data is used only on your device for this purpose and is never sent to the Developer or anywhere else.
+      When you add a contact from a scanned contact QR code, the App opens the operating system's standard "new contact" screen, pre-filled with the scanned details. You decide on that screen whether to save the contact; the App itself never reads or directly writes your device's contacts. The feature for creating a contact QR code uses only the information you enter in the App's form and does not access your device's contacts.
+    </p>
+    <p>
+      When you scan a Wi-Fi QR code, the App copies the password to your device's clipboard and then opens the system Wi-Fi settings to help you connect (the App never joins a Wi-Fi network on its own). The App also lets you copy text or barcode content to the clipboard. Copied content remains on your device and, depending on the operating system, may be accessible to other apps, so please clear it if needed.
     </p>
     <p>
       The Developer does not collect personal information that directly identifies you, such as your name, email address, or location. However, as described below, the App's advertising partner may collect your device's advertising identifier and related information.
@@ -269,18 +282,25 @@
     <p>
       Aside from the communication with Google described above for ad delivery, the App does not perform any other internet communication. The Developer does not include any analytics SDK or crash-reporting SDK, and the Developer does not share your information with third parties.
     </p>
+    <p>
+      If you use the share button or open a URL, the relevant content is passed to the app you choose (such as a browser or a sharing destination). How that information is handled afterwards is governed by that app's own policies.
+    </p>
 
     <h2>4. Permissions Used</h2>
     <p>
-      The App requests the following permissions only when the corresponding feature is used:
+      The only permission the App asks you to grant is:
     </p>
     <ul>
       <li><strong>Camera</strong>: to scan QR codes and barcodes</li>
-      <li><strong>Photo Library</strong>: to scan QR codes from saved images</li>
-      <li><strong>Contacts</strong>: to add a contact from a scanned contact QR code, or to create a QR code from contact information</li>
     </ul>
     <p>
-      These permissions are requested only the first time the corresponding feature is used, and are never used for any other purpose.
+      The camera permission is requested the first time you use the scanning feature and is never used for any other purpose.
+    </p>
+    <p>
+      Importing images and adding contacts are handled through the operating system's standard screens, so the App does not request photo library or contacts permissions (depending on the operating system and its version, the system may show its own confirmation screen).
+    </p>
+    <p>
+      In addition, for ad delivery the App declares permissions for internet access and for use of the advertising identifier (Advertising ID); these are not permissions that ask you for individual approval.
     </p>
 
     <h2>5. Data Deletion</h2>
